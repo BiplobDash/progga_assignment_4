@@ -1,0 +1,7 @@
+{% for product in data %}
+    {{product.img}}
+    {{product.name}}
+    {{product.description}}
+    {% for tags, category in product.tags.all, product.category.all %}
+    {% endfor %}
+{% endfor %}
